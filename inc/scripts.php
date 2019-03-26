@@ -6,6 +6,8 @@ function perfectpitch_scripts() {
 	wp_enqueue_style( 'perfectpitch-style', get_stylesheet_directory_uri() . '/style.min.css', array(), '1.0.0' );
 	wp_enqueue_style( 'lity-style', get_stylesheet_directory_uri() . '/lity.min.css', array(), '1.0.0' );
 	
+	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Roboto', false );
+
 	wp_enqueue_script( 'perfectpitch-js', get_template_directory_uri() . '/js/dist/scripts.min.js', array('jquery'), ' ', true );
 
 	wp_enqueue_script( 'gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js', array(), false, true );
