@@ -7,7 +7,7 @@
 .footerLeft{
 	background-size: cover;
     width: 100%;
-    height: 400px;
+    height: auto;
     background-position: center top;
     background-repeat: none;
 }
@@ -21,7 +21,7 @@
 	}
 }
 
-#field_3_1, #field_3_2, #field_3_4, #field_3_5 {
+#field_3_1, #field_3_2, #field_3_3, #field_3_4, #field_3_5 {
 	padding-right:0px;	
 }
 
@@ -42,6 +42,9 @@
 
 .footer-logo{
 	width: 250px;
+}
+.footer-logo-us{
+    width: 150px;
 }
 .contact-details{
 	margin-top: 30px;
@@ -106,3 +109,12 @@
 }
 
 */
+
+
+// GEO switch
+
+.geoip { display: none !important; }
+.geoip-country-US .geoip-show-US { display: block !important; }
+
+.geoip-hide { display: block !important; }
+.geoip-country-US .geoip-hide-US { display: none !important; }

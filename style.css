@@ -1,8 +1,8 @@
 /*
 Theme Name: PerfectPitch
 Theme URI: http://perfectpitch.com
-Author: Brad Williams
-Author URI: http://braginteractive.com
+Author: Atticus
+Author URI: http://atticuscreative.co.uk
 Description: Bootstrap 4 WordPress Theme
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -7682,6 +7682,11 @@ body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased; }
 
+a {
+  color: #00AD8C; }
+  a a:hover, a a:link {
+    color: #01846b; }
+
 h1, h2, h3 {
   font-family: '28_days_laterregular';
   font-weight: 400;
@@ -7694,13 +7699,27 @@ h1 {
 h2 {
   font-size: 3.1rem; }
 
-.home-banner {
-  height: 1000px;
+.hold-home-banner {
+  height: 600px;
   background-position: center top;
   background-repeat: no-repeat;
   background-color: #000;
-  background-size: cover;
+  background-size: 120%;
   background-repeat: no-repeat; }
+
+.home-banner {
+  height: auto;
+  padding-bottom: 2rem;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-size: 120%;
+  background-repeat: no-repeat; }
+
+.history-banner {
+  height: 500px;
+  background-position: center center;
+  background-size: cover; }
 
 .intro-strap {
   margin-top: 300px;
@@ -7713,7 +7732,7 @@ h2 {
   color: #fff; }
 
 .benefit-panel {
-  padding: 3rem; }
+  padding: 0rem 2rem; }
   .benefit-panel a {
     color: #e2801e; }
 
@@ -7728,7 +7747,7 @@ h2 {
   background-color: #fff; }
 
 .profit-block.is-active, .consistency-block.is-active, .waste-block.is-active {
-  height: 300px;
+  height: 310px;
   opacity: 1;
   transform: translate3d(0px, 0px, 0px); }
 
@@ -7776,6 +7795,7 @@ h2 {
 
 .email-address {
   font-size: 1.2rem;
+  color: #e2801e;
   margin: 0.5rem 0;
   padding: 1rem 0;
   border-top: 1px solid #fff;
@@ -7793,12 +7813,11 @@ h2 {
   overflow: hidden; }
 
 .bcg {
-  background-image: url(images/two-tank.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
   width: 100%;
-  height: 150%;
+  height: 160%;
   top: 0;
   z-index: 1;
   opacity: 0.7; }
@@ -7838,6 +7857,7 @@ h2 {
 .easy-title {
   display: block;
   font-size: 2rem;
+  line-height: 1;
   width: 100%; }
   .easy-title a {
     color: #fff; }
@@ -7862,7 +7882,8 @@ h2 {
   border: 5px solid #fff;
   border-radius: 0px;
   padding: 5px 20px;
-  color: #fff; }
+  color: #fff;
+  margin: 0 auto; }
 
 .profitBtn:hover, .consistencyBtn:hover, .wasteBtn:hover {
   background-color: #e2801e;
@@ -7878,16 +7899,23 @@ h2 {
   background-color: #e2801e;
   color: #000; }
 
+.history-wrapper {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #000;
+  height: 600px;
+  background-size: cover; }
+
 .historyBtn {
-  border: 5px solid #000;
+  border: 5px solid #fff;
   border-radius: 0px;
-  margin-top: 150px;
+  margin-top: 250px;
   padding: 5px 20px;
-  color: #000; }
+  color: #fff; }
 
 .historyBtn:hover {
   background-color: #e2801e;
-  color: #000; }
+  color: #fff; }
 
 .history-block {
   padding: 4rem 0px;
@@ -7900,6 +7928,58 @@ h2 {
   transition: all 0.5s ease-out; }
 
 .fade-up.in-view {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/* HISTORY ANIMATIONS */
+.mobile-history {
+  display: none; }
+
+.history-event {
+  padding: 3rem 0rem; }
+
+.e-desc-l {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.5s ease-out 0.5s; }
+
+.e-desc-l.in-view {
+  opacity: 1;
+  transform: translateX(0px); }
+
+.e-desc-r {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.5s ease-out 0.5s; }
+
+.e-desc-r.in-view {
+  opacity: 1;
+  transform: translateX(0px); }
+
+.e-image-l {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.5s ease-out 1s; }
+
+.e-image-l.in-view {
+  opacity: 1;
+  transform: translateX(0px); }
+
+.e-image-r {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.5s ease-out 1s; }
+
+.e-image-r.in-view {
+  opacity: 1;
+  transform: translateX(0px); }
+
+.e-date {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease-out; }
+
+.e-date.in-view {
   opacity: 1;
   transform: translateY(0px); }
 
@@ -7941,7 +8021,7 @@ h2 {
   border-radius: 0px;
   background-color: #000; }
 
-#field_1_1, #field_1_2, #field_1_4, #field_1_5 {
+#field_1_1, #field_1_2, #field_1_3, #field_1_4, #field_1_5 {
   padding-left: 16px;
   padding-right: 16px; }
 
@@ -7979,7 +8059,7 @@ div.gform_footer.top_label {
     font-size: 1.5rem; }
   .home-banner {
     height: auto;
-    background-size: 100vh; }
+    background-size: 140vh; }
   .intro-strap {
     margin-top: 180px; }
   .benefit-panel {
@@ -7991,21 +8071,23 @@ div.gform_footer.top_label {
   .profit-block, .consistency-block, .waste-block {
     position: fixed;
     top: 0;
-    height: 300px;
+    height: 0px;
     opacity: 0;
     transition: all 0.5s ease-out;
     transform: translate3d(0px, 0px, 0px);
     background-color: #fff;
-    z-index: 300; }
+    z-index: -10; }
   .profit-block.is-active, .consistency-block.is-active, .waste-block.is-active {
     opacity: 1;
     height: 100%;
-    transform: translate3d(0px, 0px, 0px); }
+    width: 100%;
+    transform: translate3d(0px, 0px, 0px);
+    z-index: 300; }
   .benefit-text {
-    padding: 1rem 1rem; }
+    padding: 2rem; }
   .form-wrapper {
     padding: 0 1rem; }
-  #field_1_1, #field_1_2, #field_1_4, #field_1_5 {
+  #field_1_1, #field_1_2, #field_1_3, #field_1_4, #field_1_5 {
     padding-left: 0px;
     padding-right: 0px; }
   .bcg-parallax {
@@ -8036,15 +8118,19 @@ div.gform_footer.top_label {
   .case-study-block {
     position: fixed;
     top: 0;
-    display: none;
+    height: 0px;
+    opacity: 0;
     background-color: #fff;
-    z-index: 100; }
+    z-index: -20;
+    transition: all 0.5s ease-out;
+    transform: translate3d(0px, 0px, 0px); }
   .case-study-block.is-active {
-    display: block;
+    opacity: 1;
     height: 100%;
-    z-index: 100; }
+    z-index: 1000;
+    transform: translate3d(0px, 0px, 0px); }
   .video-block {
-    width: 60%; }
+    width: 65%; }
   .case-study-title {
     margin: 1.5rem 0rem 0rem 0rem; }
     .case-study-title h2 {
@@ -8060,7 +8146,8 @@ div.gform_footer.top_label {
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    text-align: center; }
+    text-align: center;
+    border: 0px; }
   .easy-block-end {
     width: 100%;
     padding-top: 10px;
@@ -8079,7 +8166,32 @@ div.gform_footer.top_label {
     opacity: 1;
     top: 10px;
     font-size: 0.9rem;
-    text-align: center; } }
+    text-align: center; }
+  .mobile-history {
+    display: block; }
+  .desktop-history {
+    display: none; }
+  .e-desc-l {
+    opacity: 1;
+    transform: translateX(-100px);
+    transition: all 0.5s ease-out 0.5s; }
+  .e-desc-l.in-view {
+    opacity: 1;
+    transform: translateX(0px); }
+  .e-image-r {
+    opacity: 1;
+    transform: translateX(100px);
+    transition: all 0.5s ease-out 1s; }
+  .e-image-r.in-view {
+    opacity: 1;
+    transform: translateX(0px); }
+  .e-date {
+    opacity: 1;
+    transform: translateY(100px);
+    transition: all 0.5s ease-out; }
+  .e-date.in-view {
+    opacity: 1;
+    transform: translateY(0px); } }
 
 /*--------------------------------------------------------------
 ## Widgets
@@ -8129,7 +8241,7 @@ div.gform_footer.top_label {
 .footerLeft {
   background-size: cover;
   width: 100%;
-  height: 400px;
+  height: auto;
   background-position: center top;
   background-repeat: none; }
 
@@ -8140,7 +8252,7 @@ div.gform_footer.top_label {
     color: #e2801e;
     margin-bottom: 2rem; }
 
-#field_3_1, #field_3_2, #field_3_4, #field_3_5 {
+#field_3_1, #field_3_2, #field_3_3, #field_3_4, #field_3_5 {
   padding-right: 0px; }
 
 #gform_submit_button_3 {
@@ -8155,6 +8267,9 @@ div.gform_footer.top_label {
 
 .footer-logo {
   width: 250px; }
+
+.footer-logo-us {
+  width: 150px; }
 
 .contact-details {
   margin-top: 30px; }
@@ -8210,6 +8325,18 @@ div.gform_footer.top_label {
 }
 
 */
+.geoip {
+  display: none !important; }
+
+.geoip-country-US .geoip-show-US {
+  display: block !important; }
+
+.geoip-hide {
+  display: block !important; }
+
+.geoip-country-US .geoip-hide-US {
+  display: none !important; }
+
 .site-content {
   word-break: break-word; }
 

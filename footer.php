@@ -12,11 +12,14 @@
 ?>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+<!-- REMEMBER TO CHANGE BACKGROUND COLOR TO BLACK -->
 		<div class="container-fluid" style="background-color: #000;">
 			<div class="row">
-				<div class="container">
+				<div class="container"">
 					<div class="row">
-						<div class="col-sm-12 col-md-3 footerLeft" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/images/footer-image.jpg'); width: 100%; height: 450px; background-size: cover; background-position: center top;">
+<!-- HIDDEN FOR THE HOLDING PAGE -->						
+						<?php $footerImg = get_field('footer_image'); ?>
+						<div class="col-sm-12 col-md-3 footerLeft" style="background-image: url('<?php echo $footerImg; ?>'); ">
 						</div>
 						<div class="col-sm-12 col-md-3 footerMiddle">
 							<div class="form text-center">
@@ -26,29 +29,38 @@
 							?>
 							</div>
 						</div>
+
+<!-- REMEMBER TO CHANGE BACK TO COL-MD-6 -->						
 						<div class="col-sm-12 col-md-6 footerRight">
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/images/aber-logo.svg" class="footer-logo">
+
+							<div class="geoip geoip-show-US">
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/images/aber-logo.svg" class="footer-logo-us">&nbsp;&nbsp;&nbsp;
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/images/gusmer-logo.svg" class="footer-logo-us">
+							</div>
+							<div class="geoip-hide geoip-hide-US">
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/images/aber-logo.svg" class="footer-logo">
+							</div>
+
 							<p class="contact-details">866-213-1131<br />
 							<a href="mailto:sales@gusmerenterprises.com">sales@gusmerenterprises.com</a>
 							</p>
 
-							<a href="#0" class="c-link c-link--linkedin c-tooltip" aria-label="Facebook">
+
+							<a href="https://www.linkedin.com/company/aber-instruments-ltd/" class="c-link c-link--linkedin c-tooltip" aria-label="Linkedin">
 							    <svg class="c-icon"><use xlink:href="#icon--linkedin"></use></svg>
 							</a>
 
-							<a href="#0" class="c-link c-link--twitter c-tooltip" aria-label="Twitter">
+							<a href="https://twitter.com/AberInstruments" class="c-link c-link--twitter c-tooltip" aria-label="Twitter">
 							    <svg class="c-icon"><use xlink:href="#icon--twitter"></use></svg>
 							</a>
 
-							<a href="#0" class="c-link c-link--facebook c-tooltip" aria-label="Facebook">
+							<a href="https://www.facebook.com/aberinstruments/" class="c-link c-link--facebook c-tooltip" aria-label="Facebook">
 							    <svg class="c-icon"><use xlink:href="#icon--facebook"></use></svg>
 							</a>
 
 							<div class="companyInfo">
 							<p>Company Registration number 2213855. Registered in England and Wales. Registered Office: 5 Science Park, Aberystwyth, UK</p>
-							<p>&copy; <?php bloginfo( 'name' );
-							echo ' - ';
-							echo date("Y"); ?>
+							<p>&copy; Aber Instruments <?php echo date("Y"); ?>
 							&nbsp;|&nbsp; <a href="#">Privacy policy</a></p>
 
 

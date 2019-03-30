@@ -49,14 +49,12 @@ jQuery(document).ready(function($){
 
   var slideFadeScene = new ScrollMagic.Scene({
     triggerElement: '.fade-up',
-    triggerHook: 0.7,
+    triggerHook: 0.85,
     reverse: false
   })
   .setClassToggle('.fade-up', 'in-view') // add class to fade-up
-  .addIndicators()
+  //  .addIndicators()
   .addTo(controller);
-
-
 
 
   var slideParallaxScene = new ScrollMagic.Scene({
@@ -65,9 +63,41 @@ jQuery(document).ready(function($){
   	duration: '200%'
   })
   .setTween(TweenMax.from('.bcg', 1, {y:'-50%', ease:Power0.easeNone}))
-//  .addIndicators()
+  //  .addIndicators()
   .addTo(controller);
 
+
+  //loop through each .history-event
+  $('.history-event').each(function(){
+
+      var history1FadeScene = new ScrollMagic.Scene({
+        triggerElement: this,
+        triggerHook: 0.5,
+        reverse: false
+      })
+      .setClassToggle(this.children[0].children[0], 'in-view') // add class to fade-right
+      .addIndicators()
+      .addTo(controller);
+
+      var history2FadeScene = new ScrollMagic.Scene({
+        triggerElement: this,
+        triggerHook: 0.5,
+        reverse: false
+      })
+      .setClassToggle(this.children[0].children[1], 'in-view') // add class to fade-right
+      .addIndicators()
+      .addTo(controller);
+
+      var history3FadeScene = new ScrollMagic.Scene({
+        triggerElement: this,
+        triggerHook: 0.5,
+        reverse: false
+      })
+      .setClassToggle(this.children[0].children[2], 'in-view') // add class to fade-right
+      .addIndicators()
+      .addTo(controller);
+
+  });
 
 
 
