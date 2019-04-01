@@ -7100,29 +7100,29 @@ jQuery(document).ready(function($){
 
       var history1FadeScene = new ScrollMagic.Scene({
         triggerElement: this,
-        triggerHook: 0.5,
+        triggerHook: 0.75,
         reverse: false
       })
       .setClassToggle(this.children[0].children[0], 'in-view') // add class to fade-right
-      .addIndicators()
+//     .addIndicators()
       .addTo(controller);
 
       var history2FadeScene = new ScrollMagic.Scene({
         triggerElement: this,
-        triggerHook: 0.5,
+        triggerHook: 0.75,
         reverse: false
       })
       .setClassToggle(this.children[0].children[1], 'in-view') // add class to fade-right
-      .addIndicators()
+//      .addIndicators()
       .addTo(controller);
 
       var history3FadeScene = new ScrollMagic.Scene({
         triggerElement: this,
-        triggerHook: 0.5,
+        triggerHook: 0.75,
         reverse: false
       })
       .setClassToggle(this.children[0].children[2], 'in-view') // add class to fade-right
-      .addIndicators()
+//      .addIndicators()
       .addTo(controller);
 
   });

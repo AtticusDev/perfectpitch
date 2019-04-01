@@ -15,13 +15,13 @@
 <!-- REMEMBER TO CHANGE BACKGROUND COLOR TO BLACK -->
 		<div class="container-fluid" style="background-color: #000;">
 			<div class="row">
-				<div class="container"">
+				<div class="container-fluid">
 					<div class="row">
 <!-- HIDDEN FOR THE HOLDING PAGE -->						
 						<?php $footerImg = get_field('footer_image'); ?>
-						<div class="col-sm-12 col-md-3 footerLeft" style="background-image: url('<?php echo $footerImg; ?>'); ">
+						<div class="col-sm-12 col-md-0 col-lg-3 footerLeft" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/images/footer-image-new.jpg'); ">
 						</div>
-						<div class="col-sm-12 col-md-3 footerMiddle">
+						<div class="col-sm-12 col-md-6 col-lg-3 footerMiddle">
 							<div class="form text-center">
 								<h4>GET IN TOUCH</h4>
 							<?php
@@ -33,17 +33,33 @@
 <!-- REMEMBER TO CHANGE BACK TO COL-MD-6 -->						
 						<div class="col-sm-12 col-md-6 footerRight">
 
-							<div class="geoip geoip-show-US">
-								<img src="<?php bloginfo('stylesheet_directory'); ?>/images/aber-logo.svg" class="footer-logo-us">&nbsp;&nbsp;&nbsp;
-								<img src="<?php bloginfo('stylesheet_directory'); ?>/images/gusmer-logo.svg" class="footer-logo-us">
-							</div>
 							<div class="geoip-hide geoip-hide-US">
+								<div class="d-flex flex-wrap">
+									<div class="companyBlock d-flex flex-column">
+										<div>
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/images/aber-logo.svg" class="footer-logo-us">
+										</div>
+										<div class="mt-auto">
+											<p class="contact-details">+44 (0) 1970 636300<br />
+											<a href="mailto:sales@aberinstruments.com">sales@aberinstruments.com</a>
+											</p>
+										</div>
+									</div>
+									<div class="companyBlock d-flex flex-column">
+										<div>
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/images/gusmer-logo.svg" class="footer-logo-us">
+										</div>
+										<div class="mt-auto">
+											<p class="contact-details">866-213-1131<br />
+											<a href="mailto:sales@gusmerenterprises.com">sales@gusmerenterprises.com</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="geoip geoip-show-US">
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/images/aber-logo.svg" class="footer-logo">
 							</div>
 
-							<p class="contact-details">866-213-1131<br />
-							<a href="mailto:sales@gusmerenterprises.com">sales@gusmerenterprises.com</a>
-							</p>
 
 
 							<a href="https://www.linkedin.com/company/aber-instruments-ltd/" class="c-link c-link--linkedin c-tooltip" aria-label="Linkedin">
@@ -59,8 +75,9 @@
 							</a>
 
 							<div class="companyInfo">
-							<p>Company Registration number 2213855. Registered in England and Wales. Registered Office: 5 Science Park, Aberystwyth, UK</p>
-							<p>&copy; Aber Instruments <?php echo date("Y"); ?>
+							<p>Aber Instruments, Company Registration number 2213855. Registered in England and Wales. Registered Office: 5 Science Park, Aberystwyth, UK<br />
+							Brewing products in the US are distributed by Gusmer Enterprises</p>
+							<p>&copy; <?php echo date("Y"); ?> Aber Instruments 
 							&nbsp;|&nbsp; <a href="#">Privacy policy</a></p>
 
 
