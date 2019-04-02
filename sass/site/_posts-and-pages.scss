@@ -108,6 +108,20 @@ h2 {
   font-size: 3.1rem;
   
 }
+
+.conf-banner{
+  height: 36px;
+  background-color: $orange;
+  padding-top: 7px;
+  text-transform: uppercase;
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  a:hover{
+    color: #f1f1f1;
+  }
+}
 .hold-home-banner{
   height: 600px; 
   background-position: center top; 
@@ -409,6 +423,18 @@ h2 {
 .historyBackBtn:hover{
   background-color: $orange;
   color: #fff;
+}
+
+.thankyouBackBtn{
+  border: 5px solid #000;
+  border-radius: 0px;
+  margin-top: 0px;
+  padding: 5px 20px;
+  color: #000;  
+}
+.thankyouBackBtn:hover{
+  background-color: $orange;
+  color: #000;
 }
 
 

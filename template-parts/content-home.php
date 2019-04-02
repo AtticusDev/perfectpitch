@@ -10,6 +10,9 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+		<div class="container-fluid conf-banner">
+			<div class="col text-center text-white">See us at the <a href="https://www.craftbrewersconference.com/" target="_blank">Craft Brewers Conference</a> - Stand XXX</div>
+		</div>
 		<div class="container-fluid home-banner" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
 			<div class="container">
 				<div class="row justify-content-end">
@@ -92,9 +95,18 @@
 								<a href="tel: 866-213-1131"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/tel-icon.svg" style="width: 40px;" align="middle">&nbsp; 866-213-1131</a></div>
 							<div class="email-address">The Aber Perfectpitch is distributed in the US by Gusmer Enterprises</div>
 							<div class="form-wrapper">
-							<?php
-								echo do_shortcode('[gravityform id=1 name=Enquiry title=false description=false]');
-							?>
+
+									<div class="geoip geoip-show-US">
+										<?php
+											echo do_shortcode('[gravityform id=4 name=Enquiry US title=false description=false]');
+										?>
+									</div>
+									<div class="geoip-hide geoip-hide-US">
+										<?php
+											echo do_shortcode('[gravityform id=1 name=Enquiry title=false description=false]');
+										?>
+									</div>
+
 								<p>This site is protected by reCAPTCHA and the Google
     <a href="https://policies.google.com/privacy">Privacy Policy</a> and
     <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>

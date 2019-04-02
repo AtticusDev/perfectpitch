@@ -24,16 +24,23 @@
 						<div class="col-sm-12 col-md-6 col-lg-3 footerMiddle">
 							<div class="form text-center">
 								<h4>GET IN TOUCH</h4>
-							<?php
-								echo do_shortcode('[gravityform id=3 name=Enquiry title=false description=false]');
-							?>
+									<div class="geoip geoip-show-US">
+										<?php
+											echo do_shortcode('[gravityform id=5 name=Enquiry US title=false description=false]');
+										?>
+									</div>
+									<div class="geoip-hide geoip-hide-US">
+										<?php
+											echo do_shortcode('[gravityform id=3 name=Enquiry title=false description=false]');
+										?>
+									</div>
 							</div>
 						</div>
 
 <!-- REMEMBER TO CHANGE BACK TO COL-MD-6 -->						
 						<div class="col-sm-12 col-md-6 footerRight">
 
-							<div class="geoip-hide geoip-hide-US">
+							<div class="geoip geoip-show-US">
 								<div class="d-flex flex-wrap">
 									<div class="companyBlock d-flex flex-column">
 										<div>
@@ -56,8 +63,19 @@
 									</div>
 								</div>
 							</div>
-							<div class="geoip geoip-show-US">
-								<img src="<?php bloginfo('stylesheet_directory'); ?>/images/aber-logo.svg" class="footer-logo">
+							<div class="geoip-hide geoip-hide-US">
+								<div class="d-flex flex-wrap">
+									<div class="companyBlock d-flex flex-column">
+										<div>
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/images/aber-logo.svg" class="footer-logo-us">
+										</div>
+										<div class="mt-auto">
+											<p class="contact-details">+44 (0) 1970 636300<br />
+											<a href="mailto:sales@aberinstruments.com">sales@aberinstruments.com</a>
+											</p>
+										</div>
+									</div>
+								</div>
 							</div>
 
 
@@ -78,7 +96,7 @@
 							<p>Aber Instruments, Company Registration number 2213855. Registered in England and Wales. Registered Office: 5 Science Park, Aberystwyth, UK<br />
 							Brewing products in the US are distributed by Gusmer Enterprises</p>
 							<p>&copy; <?php echo date("Y"); ?> Aber Instruments 
-							&nbsp;|&nbsp; <a href="#">Privacy policy</a></p>
+							&nbsp;|&nbsp; <a href="/privacy-policy">Privacy policy</a></p>
 
 
 							</div>
