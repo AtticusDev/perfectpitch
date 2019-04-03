@@ -9,6 +9,11 @@
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@AberInstruments">
+<meta name="twitter:title" content="BREW ALL YOU CAN BREW - PerfectPitch">
+<meta name="twitter:description" content="See the Aber Perfectpitch at the Craft Brewers Conference - Gusmer Enterprises booth 12085 ">
+<meta name="twitter:image" content="http://perfectpitch/wp-content/uploads/2019/04/screenshot.png">
 
 		<div class="container-fluid hold-home-banner" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
 			<div class="container">

@@ -9,6 +9,11 @@
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@AberInstruments">
+<meta name="twitter:title" content="BREW ALL YOU CAN BREW - PerfectPitch">
+<meta name="twitter:description" content="See the Aber Perfectpitch at the Craft Brewers Conference - Gusmer Enterprises booth 12085 ">
+<meta name="twitter:image" content="http://yeastpitching.com/wp-content/uploads/2019/04/screenshot.png">
 
 		<div class="container-fluid conf-banner">
 			<div class="col text-center text-white">See us at the <a href="https://www.craftbrewersconference.com/" target="_blank">Craft Brewers Conference</a> - Stand XXX</div>
@@ -138,7 +143,7 @@
 					<div class="col-md-6 text-center video-block">
 						<script src="https://fast.wistia.com/embed/medias/hvylamh6ex.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_hvylamh6ex popover=true popoverAnimateThumbnail=true popoverContent=link" style="display:inline;position:relative"><a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/summit-new.jpg"></a></span>
 						<p style="margin-top: 1rem;">
-							<a href="#" class="p-link p-link--pdf" aria-label="Pdf">
+							<a href="<?php bloginfo('stylesheet_directory'); ?>/images/pp_cs_summit_2019.pdf" target="_blank" class="p-link p-link--pdf" aria-label="Pdf">
 							    <svg class="c-icon"><use xlink:href="#icon--pdf"></use></svg> Download the Summit case study
 							</a>
 						</p>
@@ -146,7 +151,7 @@
 					<div class="col-md-6 text-center video-block">
 						<script src="https://fast.wistia.com/embed/medias/vxtoqxzc5m.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_vxtoqxzc5m popover=true popoverAnimateThumbnail=true popoverContent=link" style="display:inline;position:relative"><a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/meantime-new.jpg"></a></span>
 						<p style="margin-top: 1rem;">
-							<a href="#" class="p-link p-link--pdf" aria-label="Pdf">
+							<a href="<?php bloginfo('stylesheet_directory'); ?>/images/pp_cs_meantime_2017.pdf" target="_blank" class="p-link p-link--pdf" aria-label="Pdf">
 							    <svg class="c-icon"><use xlink:href="#icon--pdf"></use></svg> Download the Meantime case study
 							</a>
 						</p>
