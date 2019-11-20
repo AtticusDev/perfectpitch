@@ -12,12 +12,13 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@AberInstruments">
 <meta name="twitter:title" content="BREW ALL YOU CAN BREW - PerfectPitch">
-<meta name="twitter:description" content="See the Aber Perfectpitch at the Craft Brewers Conference - Gusmer Enterprises booth 12085 ">
+<meta name="twitter:description" content="See the Aber Perfectpitch at #CraftBrewersCon - Gusmer Enterprises booth 12085 ">
 <meta name="twitter:image" content="http://yeastpitching.com/wp-content/uploads/2019/04/screenshot.png">
 
-		<div class="container-fluid conf-banner">
-			<div class="col text-center text-white">See us at the <a href="https://www.craftbrewersconference.com/" target="_blank">Craft Brewers Conference</a> - Stand XXX</div>
+<!--		<div class="container-fluid conf-banner">
+			<div class="col text-center text-white"><a href="https://www.braubeviale.de/en" target="_blank" style="text-decoration: none;">Visit us at BrauBeviale Hall 6, Stand 100</a></div>
 		</div>
+-->
 		<div class="container-fluid home-banner" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
 			<div class="container">
 				<div class="row justify-content-end">
@@ -96,26 +97,35 @@
 					<div class="row justify-content-center">
 						<div class="col text-center">
 							<h2>REQUEST MORE INFORMATION</h2>
-							<div class="tel-number">
-								<a href="tel: 866-213-1131"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/tel-icon.svg" style="width: 40px;" align="middle">&nbsp; 866-213-1131</a></div>
-							<div class="email-address">The Aber Perfectpitch is distributed in the US by Gusmer Enterprises</div>
-							<div class="form-wrapper">
 
-									<div class="geoip geoip-show-US">
-										<?php
-											echo do_shortcode('[gravityform id=4 name=Enquiry US title=false description=false]');
-										?>
-									</div>
-									<div class="geoip-hide geoip-hide-US">
-										<?php
-											echo do_shortcode('[gravityform id=1 name=Enquiry title=false description=false]');
-										?>
-									</div>
 
-								<p>This site is protected by reCAPTCHA and the Google
-    <a href="https://policies.google.com/privacy">Privacy Policy</a> and
-    <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
-							
+							<div class="geoip geoip-show-US">
+								<div class="tel-number">
+									<a href="tel: 866-213-1131"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/tel-icon.svg" style="width: 40px;" align="middle">&nbsp; 866-213-1131</a>
+								</div>
+								<div class="email-address">The Aber Perfectpitch is distributed in the US by Gusmer Enterprises</div>
+								<div class="form-wrapper">
+									<?php
+										echo do_shortcode('[gravityform id=4 name=Enquiry US title=false description=false]');
+									?>
+									<p>This site is protected by reCAPTCHA and the Google
+									    <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+									    <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>						
+								</div>
+							</div>
+							<div class="geoip-hide geoip-hide-US">
+								<div class="tel-number">
+									<a href="tel: +44 (0) 1970 636 300"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/tel-icon.svg" style="width: 40px;" align="middle">&nbsp; +44 (0) 1970 636 300</a>
+								</div>
+	<!--							<div class="email-address">The Aber Perfectpitch is distributed in the US by Gusmer Enterprises</div> -->
+								<div class="form-wrapper">
+									<?php
+										echo do_shortcode('[gravityform id=1 name=Enquiry title=false description=false]');
+									?>
+									<p>This site is protected by reCAPTCHA and the Google
+									    <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+									    <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>						
+								</div>
 							</div>
 						</div>
 					</div>
@@ -140,21 +150,41 @@
 				</div>
 			</div>
 			<div class="row justify-content-center">
-					<div class="col-md-6 text-center video-block">
-						<script src="https://fast.wistia.com/embed/medias/hvylamh6ex.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_hvylamh6ex popover=true popoverAnimateThumbnail=true popoverContent=link" style="display:inline;position:relative"><a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/summit-new.jpg"></a></span>
-						<p style="margin-top: 1rem;">
+					<div class="col-md-4 text-center video-block">
+						<div class="video-wrapper">
+							<script src="https://fast.wistia.com/embed/medias/hvylamh6ex.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_hvylamh6ex popover=true popoverAnimateThumbnail=true popoverContent=link" style="display:inline;position:relative"><a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/summit-block.jpg"></a></span>
+						</div>
+						<p style="margin: 0.5rem 0;">
 							<a href="<?php bloginfo('stylesheet_directory'); ?>/images/pp_cs_summit_2019.pdf" target="_blank" class="p-link p-link--pdf" aria-label="Pdf">
 							    <svg class="c-icon"><use xlink:href="#icon--pdf"></use></svg> Download the Summit case study
 							</a>
 						</p>
-					</div>					
-					<div class="col-md-6 text-center video-block">
-						<script src="https://fast.wistia.com/embed/medias/vxtoqxzc5m.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_vxtoqxzc5m popover=true popoverAnimateThumbnail=true popoverContent=link" style="display:inline;position:relative"><a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/meantime-new.jpg"></a></span>
-						<p style="margin-top: 1rem;">
+					</div>
+
+					<div class="col-md-4 text-center video-block">
+						<div class="video-wrapper">
+							<script src="https://fast.wistia.com/embed/medias/vxtoqxzc5m.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_vxtoqxzc5m popover=true popoverAnimateThumbnail=true popoverContent=link" style="display:inline;position:relative"><a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/meantime-block.jpg"></a></span>
+						</div>
+						<p style="margin: 0.5rem 0;">
 							<a href="<?php bloginfo('stylesheet_directory'); ?>/images/pp_cs_meantime_2017.pdf" target="_blank" class="p-link p-link--pdf" aria-label="Pdf">
 							    <svg class="c-icon"><use xlink:href="#icon--pdf"></use></svg> Download the Meantime case study
 							</a>
 						</p>
+					</div>
+
+					<div class="col-md-4 text-center video-block">
+						<div class="video-wrapper">
+							<script src="https://fast.wistia.com/embed/medias/f0g3ealxs1.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_f0g3ealxs1 popover=true popoverAnimateThumbnail=true popoverContent=link" style="display:inline;position:relative"><a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/marble-block.jpg"></a></span>
+						</div>
+					</div>
+
+			</div>
+			<div class="row justify-content-center">
+				<div class="col text-center mt-3">
+					<div class="btn closeCaseBtn">Close</a></div>
+				</div>
+			</div>
+		</div>
 						
 
 
@@ -186,15 +216,6 @@
 </svg>
 
 
-					</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col text-center mt-3">
-					<div class="btn closeCaseBtn">Close</a></div>
-				</div>
-			</div>
-		</div>
-
 			
 		<?php $easyImg = get_field('easy_img'); ?>
 		<div class="container-fluid easy-wrapper" style="background-image: url('<?php echo $easyImg; ?>');">
@@ -207,21 +228,21 @@
 				<div class="row text-white align-items-center">
 						<div class="col-sm-12 col-md-3 text-center" style="padding:0px;">
 							<div class="easy-block">
-								<div class="easy-title">Easy to<br />manoeuvre</div>
+								<div class="easy-title"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/manouvre-icon.png"><br />Easy to<br />manoeuvre</div>
 								<div class="easy-description"><?php the_field('manoeuvre_text'); ?></div>
 								<div class="easy-line">&nbsp;</div>
 							</div>
 						</div>
 						<div class="col-sm-12 col-md-3 text-center" style="padding:0px;">
 							<div class="easy-block">
-								<div class="easy-title">Easy to<br />connect</div>
+								<div class="easy-title"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/connect-icon.png"><br />Easy to<br />connect</div>
 								<div class="easy-description"><?php the_field('connect_text'); ?></div>
 								<div class="easy-line">&nbsp;</div>
 							</div>
 						</div>
 						<div class="col-sm-12 col-md-3 text-center" style="padding:0px;">
 							<div class="easy-block">
-								<div class="easy-title">Intuitive<br />touchscreen</div>
+								<div class="easy-title"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/touchscreen-icon.png"><br />Intuitive<br />touchscreen</div>
 								<div class="easy-description"><?php the_field('touchscreen_text'); ?></div>
 								<div class="easy-line">&nbsp;</div>
 							</div>

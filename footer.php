@@ -44,17 +44,17 @@
 								<div class="d-flex flex-wrap">
 									<div class="companyBlock d-flex flex-column">
 										<div>
-											<img src="<?php bloginfo('stylesheet_directory'); ?>/images/aber-logo.svg" class="footer-logo-us">
+											<a href="https://aberinstruments.com/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/aber-logo.svg" class="footer-logo-us"></a>
 										</div>
 										<div class="mt-auto">
-											<p class="contact-details">+44 (0) 1970 636300<br />
+											<p class="contact-details">+44 (0) 1970 636 300<br />
 											<a href="mailto:sales@aberinstruments.com">sales@aberinstruments.com</a>
 											</p>
 										</div>
 									</div>
 									<div class="companyBlock d-flex flex-column">
 										<div>
-											<img src="<?php bloginfo('stylesheet_directory'); ?>/images/gusmer-logo.svg" class="footer-logo-us">
+											<a href="https://www.gusmerenterprises.com/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/gusmer-logo.svg" class="footer-logo-us"></a>
 										</div>
 										<div class="mt-auto">
 											<p class="contact-details">866-213-1131<br />
@@ -67,10 +67,10 @@
 								<div class="d-flex flex-wrap">
 									<div class="companyBlock d-flex flex-column">
 										<div>
-											<img src="<?php bloginfo('stylesheet_directory'); ?>/images/aber-logo.svg" class="footer-logo-us">
+											<a href="https://aberinstruments.com/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/aber-logo.svg" class="footer-logo-us"></a>
 										</div>
 										<div class="mt-auto">
-											<p class="contact-details">+44 (0) 1970 636300<br />
+											<p class="contact-details">+44 (0) 1970 636 300<br />
 											<a href="mailto:sales@aberinstruments.com">sales@aberinstruments.com</a>
 											</p>
 										</div>
@@ -96,7 +96,7 @@
 							<p>Aber Instruments, Company Registration number 2213855. Registered in England and Wales. Registered Office: 5 Science Park, Aberystwyth, UK<br />
 							Brewing products in the US are distributed by Gusmer Enterprises</p>
 							<p>&copy; <?php echo date("Y"); ?> Aber Instruments 
-							&nbsp;|&nbsp; <a href="/privacy-policy">Privacy policy</a></p>
+							&nbsp;|&nbsp; <a href="/privacy-policy">Privacy policy</a>&nbsp;|&nbsp;<a href="https://atticuscreative.co.uk/" target="_blank">Site by Atticus</a></p>
 
 
 							</div>

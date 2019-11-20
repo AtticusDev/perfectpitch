@@ -75,12 +75,19 @@
 						<?php } ?>
 						<?php endwhile;
 						endif; ?>
+							<div class="container history-event" style="background: none;">
+								<div class="row justify-content-center">
+									<div class="col-md-2 text-center e-date">
+											<h2>2019</h2>
+											<h3>Aber's story continues...</h3>
+									</div>
+								</div>
+							</div>
 
 					</div> <!-- ROW -->
 				</div> <!-- CONTAINER -->
 			</div> <!-- ROW -->
 		</div> <!-- CONTAINER FLUID -->
-
 
 				<div class="container-fluid mobile-history" style="background-color: #000; padding: 2rem;">
 					<div class="row text-white">

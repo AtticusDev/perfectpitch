@@ -193,7 +193,7 @@ h2 {
   z-index: -10;
 }
 .case-study-block.is-active {
-  height: 700px;
+  height: 550px;
   opacity: 1;
   transform: translate3d(0px, 0px, 0px);
   z-index: 0;
@@ -208,13 +208,14 @@ h2 {
   width:350px;
 }
 .caseStudyBtn{
+  background-color: $orange;
   border: 5px solid #fff;
   border-radius: 0px;
-  padding: 5px 20px;
+  padding: 5px 40px;
   color: #fff;  
 }
 .caseStudyBtn:hover{
-  background-color: $orange;
+  background: none;
   color: #fff;
 }
 .caseStudyIntro{
@@ -309,9 +310,9 @@ h2 {
 
 .easy-block{
   width: 100%;
-  height: 250px;
+  height: 300px;
   border-right: 1px solid #fff;
-  padding-top: 80px;
+  padding-top: 40px;
   padding-left: 10px;
   padding-right: 10px;
   text-align: center;
@@ -327,7 +328,7 @@ h2 {
   transition: all 0.5s;
 }
 .easy-block:hover{
-    padding-top: 20px;
+    padding-top: 0px;
     .easy-description{
       opacity: 1;
     }
@@ -372,25 +373,27 @@ h2 {
 
 
 .profitBtn, .consistencyBtn, .wasteBtn {
-  border: 5px solid #fff;
-  border-radius: 0px;
+//  border: 5px solid #fff;
+//  border-radius: 0px;
   padding: 5px 20px;
-  color: #fff;
-  margin: 0 auto;  
+  color: $orange;
+  margin: 0 auto;
+  font-weight: 700;
 }
 .profitBtn:hover, .consistencyBtn:hover, .wasteBtn:hover{
-  background-color: $orange;
+//  background-color: $orange;
   color: #fff;
 }
 
 .closeCaseBtn, .closeBtn {
-  border: 5px solid #000;
-  border-radius: 0px;
+//  border: 5px solid #000;
+//  border-radius: 0px;
   padding: 5px 20px;
-  color: #000;  
+  color: $orange;  
+  font-weight: 700;
 }
 .closeCaseBtn:hover, .closeBtn:hover{
-  background-color: $orange;
+//  background-color: $orange;
   color: #000;
 }
 
@@ -474,6 +477,9 @@ h2 {
   background-repeat: repeat-y;
   background-position: center top;
 }
+.history-event-end{
+  padding: 3rem 0rem;
+}
 
 .history-title{
   margin-top: 3.5rem;
@@ -492,7 +498,7 @@ h2 {
 .e-desc-l {
   opacity: 0;
   transform: translateX(-100px);
-  transition: all 0.5s ease-out 0.5s;  
+  transition: all 0.5s ease-out;  
 }
 .e-desc-l.in-view {
   opacity: 1;
@@ -671,6 +677,9 @@ div.gform_footer.top_label {
 
   .intro-strap {
     margin-top: 180px;
+    h1 {
+      font-size: 1.7rem;
+    }
   }
 
   .benefit-panel{
@@ -760,8 +769,12 @@ div.gform_footer.top_label {
     z-index: 1000;
     transform: translate3d(0px, 0px, 0px);
   }
+  .video-wrapper{
+    width: 55%;
+    margin: 0 auto;
+  }
   .video-block{
-    width: 65%;
+    width: 100%;
   }
   .video-thumb{
     display:inline-block;
@@ -899,6 +912,10 @@ div.gform_footer.top_label {
 
   .companyBlock{
     width: 100%;  
+  }
+  .conf-banner{
+    height: 50px;
+    padding-top: 5px;
   }
 
 }
